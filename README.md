@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Eteration Frontend Developer Case Study
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was developed as part of a case study for a Frontend Developer position at Eteration. It showcases my ability to build a modern web application using **ReactJS** and **TypeScript**. The project demonstrates essential frontend skills such as state management, routing, responsive design, and unit testing.
 
-Currently, two official plugins are available:
+You can test the live version of the project here: [Project Demo](https://eteration-react-case.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To run this project locally, follow the steps below:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/bolatbaris/eteration-react-case.git
+    ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname
-    }
-  }
-})
-```
+2. Navigate to the project directory:
+    ```bash
+    cd eteration-react-case
+    ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Install the dependencies using Yarn:
+    ```bash
+    yarn
+    ```
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react"
+4. Start the development server with Vite:
+    ```bash
+    yarn dev
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules
-  }
-})
-```
+5. Open your browser and go to:
+    ```
+    http://localhost:5173/
+    ```
+
+
+   ## Technologies Used
+
+- **ReactJS**: JavaScript library for building user interfaces.
+- **TypeScript**: Strongly typed programming language that builds on JavaScript, providing better tooling and error detection.
+- **Vite**: Fast development server and build tool optimized for modern web projects.
+- **MUI (Material UI)**: UI library used to build responsive and consistent design components.
+- **React Router Dom v6**: Library for handling routing in React applications.
+- **Axios**: Promise-based HTTP client used for making API requests.
+- **React Query**: Data-fetching library used to manage server state and caching.
+- **Zustand**: Lightweight state management library used for handling global state.
+  - **Zustand Persist**: Used for persisting cart and other application states in localStorage, ensuring data remains available across browser sessions.
+- **use-debounce**: Utilized for debouncing search input during user typing.
+- **ESLint, Prettier, Husky**: Tools to ensure consistent code quality and formatting.
+
+
+## Unit Testing
+
+Unit tests have been written for the stores to ensure their functionality and reliability. These tests validate that the state management using Zustand works as expected.
+
+
