@@ -4,7 +4,8 @@ export const pageLayoutStyles: SxProps<Theme> = {
   width: "100vw",
   height: "100vh",
   minWidth: "375px",
-  overflowX: "hidden"
+  overflowX: "hidden",
+  pb: 4
 }
 
 export const containerStyles: SxProps<Theme> = {

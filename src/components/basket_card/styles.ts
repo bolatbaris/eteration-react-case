@@ -1,20 +1,11 @@
 import type { SxProps, Theme } from "@mui/material"
 
-export const basketLineStyles = {
-  typography: {
-    textOverflow: "ellipsis",
-    maxWidth: "25ex",
-    fontSize: 12
-  }
-}
-
 const ButtonStyles: SxProps<Theme> = {
-  height: "80%",
-  aspectRatio: 1,
   justifyContent: "center",
   alignItems: "center",
   background: (theme) => theme.palette.grey[200],
-  borderRadius: 0
+  borderRadius: 0,
+  alignSelf: "center"
 }
 
 export const iconButtonLeftStyles: SxProps<Theme> = {
@@ -30,8 +21,8 @@ export const iconButtonRightStyles: SxProps<Theme> = {
 }
 
 export const countBoxStyles: SxProps<Theme> = {
-  height: "90%",
-  aspectRatio: 1,
+  width: "5rem",
+  height: "3rem",
   justifyContent: "center",
   alignItems: "center",
   display: "flex",

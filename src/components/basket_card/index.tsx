@@ -4,7 +4,6 @@ import { Box, Card, Grow, IconButton, Stack, Typography } from "@mui/material"
 import { useCartStore } from "@stores"
 
 import {
-  basketLineStyles,
   countBoxStyles,
   iconButtonLeftStyles,
   iconButtonRightStyles
@@ -37,18 +36,18 @@ function BasketLine({
 
   return (
     <Stack direction="row" gap={1} justifyContent="space-between">
-      <Stack>
-        <Typography sx={basketLineStyles.typography} noWrap>
+      <Stack maxWidth="50%" width="50%">
+        <Typography sx={{ textOverflow: "ellipsis", fontSize: 14 }}>
           {product.name}
         </Typography>
-        <Typography color="primary" fontSize={10} fontWeight={500}>
+        <Typography color="primary" fontSize={12} fontWeight={500}>
           {product.price} ₺
         </Typography>
       </Stack>
       <Box
         alignItems="center"
         display="flex"
-        sx={{ justifyContent: "flex-end" }}
+        sx={{ justifyContent: "flex-end", width: "50%" }}
       >
         <IconButton
           disabled={quantity <= 0}
