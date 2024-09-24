@@ -1,1 +1,1 @@
-export const API_BASE = import.meta.env.VITE_API_BASE
+export const API_BASE = "https://5fc9346b2af77700165ae514.mockapi.io"
