@@ -1,0 +1,15 @@
+node_modules
+.expo
+.eslintrc.js
+babel.config.js
+.vscode
+.prettierrc
+.prettierignore
+ios
+android
+docs
+typedoc.json
+./dist
+vite.config.ts
+vitest.config.ts
+vitest.setup.ts

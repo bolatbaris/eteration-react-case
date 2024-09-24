@@ -1,0 +1,13 @@
+node_modules
+expo
+.eslintrc.js
+babel.config.js
+.vscode
+.eslintignore
+.eslintrc.js
+.eslintcache
+ios
+android
+docs
+./dist
+dist

@@ -1,7 +1,26 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "extends": "@tsconfig/create-react-app/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@pages": ["src/pages"],
+      "@constants": ["src/constants"],
+      "@layouts": ["src/layouts"],
+      "@components": ["src/components"],
+      "@contexts": ["src/contexts"],
+      "@api": ["src/api"],
+      "@hooks": ["src/hooks"],
+      "@models": ["src/models"],
+      "@stores": ["src/stores"]
+    },
+    "declaration": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": ["src", "./vitest.setup.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
